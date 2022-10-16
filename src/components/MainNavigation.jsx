@@ -13,7 +13,8 @@ function MainNavigation() {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
-              end>
+              end
+            >
               Home
             </NavLink>
           </li>
@@ -23,7 +24,8 @@ function MainNavigation() {
               className={({ isActive }) =>
                 isActive ? classes.active : undefined
               }
-              end>
+              end
+            >
               Blog
             </NavLink>
           </li>

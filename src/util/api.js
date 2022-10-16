@@ -25,8 +25,8 @@ export async function savePost(post) {
     method: 'POST',
     body: JSON.stringify(post),
     headers: {
-      'Content-Type': 'application/json',
-    },
+      'Content-Type': 'application/json'
+    }
   });
 
   if (!response.ok) {
