@@ -4,7 +4,6 @@ import { getPosts } from '../util/api';
 
 function BlogPostsPage() {
   const posts = useLoaderData();
-  console.log('loaderData', posts);
   return (
     <>
       <h1>Our Blog Posts</h1>
