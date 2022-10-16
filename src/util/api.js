@@ -17,7 +17,7 @@ export async function getPost(id) {
 }
 
 export async function savePost(post) {
-  if (post.title.trim().length < 5 || post.body.trim().length < 10) {
+  if (post.title.trim().length < 35 || post.body.trim().length < 10) {
     throw { message: 'Invalid input data provided.', status: 422 };
   }
 
