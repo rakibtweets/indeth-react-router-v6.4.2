@@ -10,7 +10,6 @@ import { savePost } from '../util/api';
 
 function NewPostPage() {
   const data = useActionData();
-  console.log('NewPostPage ~ data', data);
   const navigate = useNavigate();
   const navigation = useNavigation();
 

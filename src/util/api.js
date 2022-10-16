@@ -1,3 +1,5 @@
+import { sleep } from './sleep';
+
 export async function getPosts() {
   const response = await fetch('https://jsonplaceholder.typicode.com/posts');
   if (!response.ok) {
@@ -32,4 +34,13 @@ export async function savePost(post) {
   if (!response.ok) {
     throw { message: 'Could not save post.', status: 500 };
   }
+}
+
+export async function getSlowPosts() {
+  await sleep(2000);
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts');
+  if (!response.ok) {
+    throw new Response('Failed to fetch posts.', { status: 500 });
+  }
+  return response.json();
 }
